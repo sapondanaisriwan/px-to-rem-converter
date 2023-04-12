@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+  --main-bg: #1e2021;
+  --main-nav-bg: #232526;
+
+  --text-main-color: #ffffff;
+  --text-main-color2: #aeaeae;
+
+  --border-black: #3e4345;
+  --border-green: #2e855e;
+  --border-blue: #2e3d85;
+  --border-light-blue: #5bbdfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  background-color: var(--main-bg);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-main-color2);
+}
+
+label {
+  display: block;
+}
+
+input {
+  // -webkit-appearance: none;
+  outline: none;
+}
+
+hr {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border-black);
+}
+
+h1,
+h2 {
+  color: var(--text-main-color);
+}
+
+h3,
+p {
+  color: var(--text-main-color2);
+}
+
+header {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+
+  background-color: var(--main-nav-bg);
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--text-main-color2);
+    }
+    .nav-links {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+main {
+  // display: flex;
+  // justify-content: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  .inner-main {
+    #converter-container {
+      margin-bottom: 40px;
+      .title-page {
+        h1 {
+          text-align: center;
+        }
+      }
+      .default-px {
+        margin-bottom: 15px;
+      }
+      .units-group {
+        display: flex;
+        .px-container,
+        .rem-container {
+          margin-bottom: 15px;
+        }
+      }
+      label {
+        color: var(--text-main-color2);
+      }
+
+      input {
+        border-radius: 16px;
+        height: 40px;
+        padding: 4px 10px;
+        color: var(--text-main-color2);
+        background-color: var(--main-bg);
+        &#base-field {
+          border: 2px solid var(--border-black);
+        }
+        &#px-field {
+          border: 2px solid var(--border-green);
+        }
+        &#rem-field {
+          border: 2px solid var(--border-blue);
+        }
+        &#em-field {
+          border: 2px solid var(--border-light-blue);
+        }
+      }
+    }
+
+    #preview-container {
+      margin-bottom: 45px;
+      .preview-unit {
+        display: flex;
+        justify-content: space-around;
+        p:not(.dummy) {
+          font-size: 1.4rem;
+          font-weight: 600;
+          text-align: center;
+        }
+        .dummy-unit-px {
+          color: var(--border-green);
+        }
+
+        .dummy-unit-rem {
+          color: var(--border-blue);
+        }
+        .dummy-unit-em {
+          color: var(--border-light-blue);
+        }
+      }
+    }
+    #faqs {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.img {
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 639.98px) {
+  label,
+  p {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  #faqs p {
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  main {
+    max-width: 100%;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  #converter-container {
+    .units-group {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  main {
+    max-width: 624px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 744px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 996px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  main {
+    max-width: 1260px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    max-width: 1300px;
+  }
+}
+
+// @media screen and (min-width: 1536px) {
+//   main {
+//     max-width: 1512px;
+//   }
+// }
