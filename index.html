@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/js/script.js" defer></script>
+
+    <title>PX To REM Converter</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a
+          href="https://github.com/sapondanaisriwan/px-to-rem-converter"
+          target="_blank"
+        >
+          <div class="logo-img">
+            <i
+              class="bx bxl-github"
+              style="color: #aeaeae; font-size: 34px"
+            ></i>
+          </div>
+          <span>sapondanaisriwan</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#converter-container">Home</a>
+          <a href="#faqs">Faqs</a>
+          <a href="#contact-us">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="inner-main">
+        <div class="test">
+          <div>
+            <div>
+              <section id="converter-container">
+                <div class="title-page">
+                  <h1>PX To REM Converter</h1>
+                </div>
+                <div class="default-px">
+                  <label for="base-field">Default font size is at</label>
+                  <input type="number" value="16" id="base-field" />
+                  <label for="base-field">px</label>
+                </div>
+                <div class="units-group">
+                  <div class="px-container">
+                    <label>Pixels</label>
+                    <div class="unit-group-wrapper">
+                      <input
+                        type="number"
+                        id="px-field"
+                        value="32"
+                        class="unit-px"
+                      />
+                      <span class="copy-icon">
+                        <i class="bx bx-copy-alt" style="color: #aeaeae"></i>
+                      </span>
+                      <span class="input-unit-text">px</span>
+                    </div>
+                  </div>
+                  <div class="rem-container">
+                    <label>Rem</label>
+                    <div class="unit-group-wrapper">
+                      <input
+                        type="number"
+                        id="rem-field"
+                        value="2"
+                        class="unit-rem"
+                      />
+                      <span class="copy-icon">
+                        <i class="bx bx-copy-alt" style="color: #aeaeae"></i>
+                      </span>
+                      <span class="input-unit-text">rem</span>
+                    </div>
+                  </div>
+                  <div class="em-container">
+                    <label>EM</label>
+                    <div class="unit-group-wrapper">
+                      <input
+                        type="number"
+                        id="em-field"
+                        value="2"
+                        class="unit-em"
+                      />
+                      <span class="copy-icon">
+                        <i class="bx bx-copy-alt" style="color: #aeaeae"></i>
+                      </span>
+                      <span class="input-unit-text">em</span>
+                    </div>
+                  </div>
+                  <div class="percent-container">
+                    <label>Percent</label>
+                    <div class="unit-group-wrapper">
+                      <input
+                        type="number"
+                        id="percent-field"
+                        value="200"
+                        class="unit-percent"
+                      />
+                      <span class="copy-icon">
+                        <i class="bx bx-copy-alt" style="color: #aeaeae"></i>
+                      </span>
+                      <span class="input-unit-text">%</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="preview-container">
+                <h2>Preview</h2>
+                <hr />
+                <div class="preview-unit">
+                  <div class="px-text">
+                    <p class="dummy-unit-px">PIXEL</p>
+                    <p class="dummy">Text</p>
+                  </div>
+                  <div class="rem-text">
+                    <p class="dummy-unit-rem">REM</p>
+                    <p class="dummy">Text</p>
+                  </div>
+                  <div class="em-text">
+                    <p class="dummy-unit-em">EM</p>
+                    <p class="dummy">Text</p>
+                  </div>
+                  <div class="percent-text">
+                    <p class="dummy-unit-em">Percent</p>
+                    <p class="dummy">Text</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <section id="faqs">
+          <h2>FAQs</h2>
+          <hr />
+          <h3>Q: What is the difference between pixels and rems?</h3>
+          <p>
+            A: Pixels are a fixed unit of measurement, while rems are relative
+            to the base font size of the website. Using rems allows for scalable
+            and responsive designs that adjust to different screen sizes.
+          </p>
+          <h3>
+            Q: Can I use the rem values generated by this tool in my CSS code?
+          </h3>
+          <p>
+            A: Yes, simply copy the rem values from our tool and paste them into
+            your CSS code.
+          </p>
+          <h3>Q: How do I determine the base font size for my website?</h3>
+          <p>
+            A: The base font size is typically set in the body element of your
+            CSS code. It is usually set to 16 pixels by default.
+          </p>
+          <div class="img">
+            <img src="./src/svg/faq.svg" alt="faq" />
+          </div>
+        </section>
+        <section id="contact-us">
+          <h2>Contact Us</h2>
+          <hr />
+          <p>
+            Have a question or feedback for our team? Get in touch with us using
+            our contact form or email us directly at
+            <a href="mailto:sapondanaisriwan@gmail.com"
+              >sapondanaisriwan@gmail.com</a
+            >
+            We're always happy to hear from our users and help in any way we
+            can.
+          </p>
+          <div class="img">
+            <img src="./src/svg/contact-us.svg" alt="contact us" />
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <span>© 2014-2023</span>
+          </div>
+          <div class="footer-right">
+            <a
+              href="https://github.com/sapondanaisriwan/px-to-rem-converter"
+              target="_blank"
+            >
+              <i
+                class="bx bxl-github"
+                style="color: #aeaeae; font-size: 34px"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
